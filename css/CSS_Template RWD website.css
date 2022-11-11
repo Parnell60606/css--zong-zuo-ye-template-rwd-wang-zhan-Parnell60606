@@ -1,0 +1,942 @@
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.03rem;
+  /* box-sizing: border-box; */
+  color: var(--font-black);
+  border-collapse: collapse;
+}
+
+h2 {
+  color: var(--font-black);
+  font-family: var(--font-lora);
+  font-size: 42px;
+  letter-spacing: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --btn-coffee: #bf9376;
+  --bg-lightbrown: #EBDED5;
+  --bg-gray: #fafafa;
+  --bg-white: #ffffff;
+  --bg-lightgray: #fafafa;
+  --font-gray: #737373;
+  --font-black: #282828;
+  --card-border: #e3e3e3;
+  --card-h2color: #cfcfcf;
+  --font-lora: 'Lora', serif;
+  --font-lato: 'Lato', sans-serif;
+
+}
+
+input {
+  border: 0;
+}
+
+input:not('#top-search') {
+  outline-color: var(--bg-lightbrown);
+}
+
+input:focus {
+  outline-style: solid;
+  outline-color: var(--bg-lightbrown);
+}
+
+/* hover變色 ------------------ */
+/* 黑轉淺棕 */
+.hover-coffee {
+  color: var(--font-black);
+  transition: color 0.2s linear 0s;
+}
+
+.hover-coffee:hover {
+  color: var(--btn-coffee);
+}
+
+/* 淺棕轉黑 */
+.hover-black {
+  color: var(--btn-coffee);
+  transition: color 0.2s linear 0s;
+}
+
+.hover-black:hover {
+  color: var(--font-black);
+}
+
+button {
+  background: var(--btn-coffee);
+  border: none;
+  color: white;
+  /* display: inline-block; */
+}
+
+.bg-wheat {
+  background-color: var(--bg-lightbrown);
+}
+
+/* navbar ------------------------------------------------------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  /* ↓ 在 chrome、firefox 的寬度會是父元素寬度 */
+  width: -webkit-fill-available;
+  width: -moz-fill-available;
+  margin: 0;
+  padding-left: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: white; */
+  background-color: transparent;
+
+  /* opacity: 0.8; */
+
+  z-index: 10;
+}
+
+/* navbar捲動變色 */
+.scrolled {
+  background: white;
+}
+
+.nav-left {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+}
+
+/* logo */
+.navbar img {
+  height: 35px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navbar ul {
+  display: flex;
+  letter-spacing: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  font-weight: 700;
+
+  /* vertical-align: bottom; */
+  /* line-height: 0; */
+  margin: 0 10px;
+}
+
+.navbar a {
+  /* text-decoration: none; */
+  color: var(--font-black);
+  font-size: 0.5rem;
+  transition: color 0.2s linear 0s;
+}
+
+/* logo */
+.navbar a:first-child {
+  height: 35px;
+  /* transform: translate(0%, 8px); */
+}
+
+.navbar a:hover {
+  color: var(--btn-coffee);
+}
+
+.nav-right {
+  height: 100%;
+  flex-grow: 0;
+  /* justify-self: flex-end;
+  align-self: flex-end; */
+}
+
+.navbar input {
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
+  background: transparent;
+
+  color: var(--font-gray);
+  /* top: 0; */
+  position: relative;
+  /* 微調input:search偏移 */
+  transform: translate(3px, -5px);
+}
+
+.navbar input:focus {
+  background: var(--bg-gray);
+}
+
+.navbar button {
+  height: 100%;
+  width: 112px;
+  transition: background 0.2s linear 0s;
+  font-size: 30px;
+  /* background: ; */
+
+}
+
+.navbar button:hover {
+  background: black;
+}
+
+/* section01 大封面 ------------------------------------------------------------------------- */
+#section01 {
+  height: 920px;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+/* 標題 Essential Tips for Happiness and Productivity */
+#section01 .title {
+  position: absolute;
+  padding: 200px 0 280px 9%;
+  /* pointer-events: none; */
+}
+
+#section01 h1 {
+  font-family: var(--font-lora);
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 6rem;
+  letter-spacing: 0;
+  margin: 0 0 60px 0;
+}
+
+.left {
+  background: var(--bg-lightbrown) url('../img/bg-intro.svg') no-repeat left bottom / 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 2;
+}
+
+.enter-and-subscribe {
+  width: 500px;
+  height: 55px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* 大封面的imput 輸入欄位 */
+.left input {
+  height: 100%;
+  /* width: 60%; */
+  box-sizing: border-box;
+  padding: 4%;
+  flex-grow: 1;
+}
+
+/* 大封面的subscribe 按鈕 */
+.left button {
+  width: 115px;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 10px;
+  font-weight: 700;
+
+  line-height: 0;
+}
+
+.left p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.right {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  /* background-color: rosybrown; */
+}
+
+.menber-img {
+  width: 324px;
+  height: 426px;
+
+  overflow: hidden;
+  padding: 0;
+  background: url(../img/home-01-324x426.jpg) no-repeat center / 100%;
+  transition: background 0.2s linear 0s;
+}
+
+.menber-img:hover {
+  background-size: 102%;
+}
+
+
+.menber-img::before {
+  content: '';
+  position: absolute;
+  width: 324px;
+  height: 426px;
+  transition: background 0.2s linear 0s;
+}
+
+.menber-img:hover::before {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 圖片左邊的兩個menber box */
+.menber-content {
+  width: 207px;
+  height: 426px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--font-gray);
+  /* align-items: flex-end; */
+}
+
+.box-checkout {
+  /* flex-grow: 1; */
+  background: var(--bg-white);
+  padding: 30px 15px;
+}
+
+.box-checkout p {
+  /* line-height: .5rem; */
+  margin: 10px 0 0 0;
+}
+
+.box-name {
+  /* flex-grow: 1; */
+  background: var(--bg-lightbrown);
+  padding: 35px 15px 60px 15px;
+}
+
+.box-name a {
+  font-family: var(--font-lora);
+  font-size: 33px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: initial;
+}
+
+.box-name p {
+  line-height: 1.6rem;
+  margin: 8px 0;
+}
+
+
+/* section02 最近的新聞(輪播) ------------------------------------------------------------------------- */
+#section02 {
+  text-align: center;
+  padding: 80px 0 0 0;
+  overflow-x: hidden;
+  /* display: flex; */
+}
+
+#section02 hr {
+  margin-top: 50px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 11px;
+  overflow: hidden;
+  margin-top: 50px;
+  border-top: 1px solid var(--card-border);
+  /* border-bottom: 1px solid var(--card-border); */
+  box-sizing: border-box;
+
+}
+
+
+/* 
+  992px大小視窗  除了前2個card以外 display:none;
+  (用nth:child抓) 
+*/
+
+.card {
+  border: 1px solid var(--card-border);
+  flex-grow: 1;
+  height: max-content;
+  border-top: none;
+  border-bottom: none;
+
+  text-align: left;
+  padding: 8px 8px 30px 8px;
+
+
+
+  height: 700px;
+
+  transition: background 0.2s linear 0s;
+}
+
+.card:hover {
+  background: var(--bg-lightgray);
+}
+
+.card h2 {
+  color: var(--card-h2color);
+  margin: 35px 30px;
+}
+
+.card-body {
+  padding: 20px 33px;
+  font-family: var(--font-lora);
+  line-height: 1.3;
+
+}
+
+.card-body a {
+  /* color: var(--font-black); */
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#explore {
+  font-family: var(--font-lato);
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:first-child {
+  border-left: none;
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+
+
+/* section03 受歡迎ㄉ新聞 ------------------------------------------------------------------------- */
+#section03 {
+  background: var(--bg-lightgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#section03 .top {
+  padding: 85px 10% 35px 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section03 h2 {
+  /* display: inline-block; */
+  flex-shrink: 0;
+  width: 470px;
+}
+
+#section03 p {
+  /* display: inline-block; */
+  flex-shrink: 1;
+  width: 700px;
+  color: var(--font-gray);
+  line-height: 1.6;
+}
+
+.card2-grope {
+  display: flex;
+  flex-shrink: 1;
+
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.card2 {
+  margin-bottom: 60px;
+  width: 370px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: white;
+  margin: 15px;
+  height: fit-content;
+
+  flex-shrink: 0;
+}
+
+.card2 img {
+  width: 100%;
+}
+
+.card2-body {
+  padding: 27px;
+}
+
+.tag {
+  /* height: 25px; */
+
+  display: inline-block;
+  background: #bf93763b;
+  /* background: var(--btn-coffee); */
+  color: var(--btn-coffee);
+  border-radius: 4px;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+
+  transition: all .2s linear 0s;
+}
+
+.tag:hover {
+  background: var(--btn-coffee);
+  color: white;
+
+}
+
+.card2-title {
+  margin: 16px 0;
+  font-family: var(--font-lora);
+  font-size: 21px;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.card2-date {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 19px 0;
+  color: var(--font-gray);
+}
+
+.hr {
+  margin: 0;
+  width: 51px;
+  height: 1px;
+  background: var(--card-border);
+}
+
+/* section04 拿摸李手機app ------------------------------------------------------------------------- */
+#section04 {
+  padding: 85px 10% 85px 10%;
+  background: url(../img/bg-get-app.jpg) right/cover;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#section04 button {
+  font-weight: 700;
+  font-size: 12px;
+  width: 125px;
+  height: 50px;
+}
+
+
+#stay-in-the-know{
+  font-size: 15px;
+  color: #424242;
+  width: 318px;
+  margin: 19.86px 50px ;
+  line-height: 1.75rem;
+  
+}
+
+
+
+/* footer ------------------------------------------------------------------------- */
+footer {
+  padding: 120px 95px;
+  background: var(--font-black);
+}
+
+#logo-footer {
+  width: 200px;
+}
+
+
+
+
+/* ☆媒☆體☆查☆詢-------------- */
+
+
+/* 原網頁navbar 到 1200px後會切換狀態 */
+@media (max-width:1200px) {
+
+  h2 {
+    font-size: 38px;
+  }
+
+  .navbar {
+    height: 60px;
+    background: white;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar button {
+    height: 40px;
+    width: 40px;
+    transition: background 0.2s linear 0s;
+    font-size: 24px;
+  }
+
+  .navbar button:hover {
+    background: var(--btn-coffee);
+  }
+
+  /* section01 */
+  #section01 {
+    height: 810px;
+  }
+
+  #section01 .title {
+    padding: 180px 0 320px 9%;
+    /* pointer-events: none; */
+  }
+
+  #section01 h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0 0 25px 0;
+  }
+
+  /* #section01 p {
+    font-size: 1rem;
+  } */
+
+
+  .enter-and-subscribe {
+    width: 450px;
+  }
+
+  /* .box-name {
+  } */
+
+  .box-name a {
+    font-size: 1.5rem;
+  }
+
+  /* section02 */
+  #section02 {
+    padding: 40px 0 0 0;
+  }
+
+  .carousel {
+    display: flex;
+    padding: 0 10%;
+
+    margin-top: 0px;
+
+  }
+
+
+
+
+  .card-body a {
+    font-size: 22px;
+  }
+
+  #explore {
+    margin-top: 8px;
+  }
+
+  /* section03 */
+  #section03 .top {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+
+  #section03 h2 {
+    width: 375px;
+  }
+
+  #section03 p {
+    width: 570px;
+  }
+
+
+  .card2 {
+    width: 300px;
+  }
+}
+
+@media (max-width:992px) {
+
+  h2 {
+    font-size: 38px;
+  }
+
+  .navbar {
+    height: 60px;
+    background: white;
+  }
+
+  #section01 {
+    background: var(--bg-lightbrown) url('../img/bg-intro.svg') no-repeat left bottom / 40%;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 100px;
+  }
+
+  #section01 .title {
+    position: initial;
+    /* top: 120px; */
+    padding: 150px 0 20px 0;
+
+  }
+
+  #section01 h1 {
+    font-size: 34px;
+  }
+
+  .left {
+    background: none;
+  }
+
+  /* right */
+  /* 圖片左邊的兩個menber box */
+  .menber-content {
+    width: 140px;
+    justify-content: space-around;
+    padding-right: 10px;
+  }
+
+  .box-checkout {
+    /* flex-grow: 1; */
+    background: none;
+    padding: 120px 0 0 0;
+  }
+
+  .box-name {
+    /* flex-grow: 1; */
+    background: none;
+    padding: 0;
+  }
+
+
+  #section02 {
+    padding: 60px 0 0 0;
+  }
+
+  #section03 h2 {
+    width: 300px;
+  }
+
+  .carousel {
+    padding: 0 15%;
+  }
+
+  .card {
+    display: none;
+    width: 350px;
+
+    flex-shrink: 0;
+  }
+
+
+
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    display: block;
+  }
+
+  /* section03 */
+  #section03 .top {
+    align-items: flex-start;
+    padding-bottom: 5px;
+  }
+
+  #section03 h2 {
+    width: 300px;
+    font-size: 30px
+  }
+
+  #section03 p {
+    width: 400px;
+  }
+
+
+  .card2 {
+    width: 215px;
+  }
+
+
+  .card2-body {
+    padding: 25px 14px;
+  }
+
+  .card2-date {
+    margin-bottom: 0;
+  }
+}
+
+/* 768px ------------ */
+@media (max-width:768px) {
+  .card {
+    width: 260px;
+    flex-shrink: 0;
+  }
+
+  /* section03 */
+  #section03 .top {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 520px;
+  }
+
+  #section03 h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  #section03 p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .card2 {
+    width: 370px;
+  }
+}
+
+/* 576px --------------------------------------------- */
+@media (max-width:576px) {
+
+  h2 {
+    font-size: 28px;
+  }
+
+  #section01 .title {
+    /* flex-shrink: 1; */
+    padding: 120px 0 20px 0;
+
+  }
+
+  /* right */
+
+  .right {}
+
+  .menber-img {
+    display: inline-flex;
+
+    flex-shrink: 1;
+    /* 
+    background-color: red;
+    background-image: none; */
+
+    overflow: hidden;
+    background: url(../img/home-01-324x426.jpg) no-repeat center / 100%;
+    /* background-size: 100% 100%; */
+    transition: background 0.2s linear 0s;
+  }
+
+  .menber-content {
+    width: 115px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .menber-content p {
+    font-size: 14px;
+  }
+
+  .box-checkout {
+    padding: 130px 0 0 0;
+  }
+
+  .box-checkout a {
+    font-size: 14px;
+  }
+
+  .box-name {
+    width: 115px;
+    padding: 0 0 50px 0;
+  }
+
+  .box-name a {
+    font-size: 21px;
+  }
+
+  /* section02 */
+
+  .carousel {
+    padding: 0 11px;
+  }
+
+  .card {
+    width: 480px;
+  }
+
+  .card:nth-child(2) {
+    display: none;
+    flex-shrink: 1;
+    /* width: 350px; */
+
+  }
+
+  /* .card:first-child {
+    display: block;
+    width: 480px;
+  } */
+
+
+
+  /* section03 */
+  #section03 {
+    padding: 60px 13px;
+
+  }
+
+  #section03 .top {
+    flex-shrink: 1;
+    padding: 0%;
+    width: auto;
+  }
+
+  #section03 h2 {
+    display: block;
+    width: auto;
+  }
+
+  #section03 p {
+    display: block;
+    /* flex-shrink: 1; */
+    width: auto;
+  }
+
+  .card2 {
+    flex-shrink: 1;
+  }
+
+  /* section04 */
+  #section04 {
+    background: url(../img/bg-get-app.jpg) center/cover;
+
+  }
+
+
+  /* footer */
+
+}
+
+@media (max-width:480px) {}
