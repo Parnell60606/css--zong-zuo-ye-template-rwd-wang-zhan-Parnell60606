@@ -25,6 +25,8 @@ a {
   --bg-lightgray: #fafafa;
   --font-gray: #737373;
   --font-black: #282828;
+  --font-lightgrey: #ffffffcc;
+  --font-white: #ffffffff;
   --card-border: #e3e3e3;
   --card-h2color: #cfcfcf;
   --font-lora: 'Lora', serif;
@@ -70,6 +72,7 @@ button {
   background: var(--btn-coffee);
   border: none;
   color: white;
+  padding: 15px 25px;
   /* display: inline-block; */
 }
 
@@ -155,22 +158,27 @@ button {
 
 .nav-right {
   height: 100%;
+  /* width: 43.7vw; */
   flex-grow: 0;
+  display: flex;
   /* justify-self: flex-end;
   align-self: flex-end; */
 }
 
 .navbar input {
+  flex-grow: 1;
   height: 100%;
   box-sizing: border-box;
   outline: none;
   background: transparent;
 
+
   color: var(--font-gray);
   /* top: 0; */
   position: relative;
-  /* 微調input:search偏移 */
-  transform: translate(3px, -5px);
+  padding: 0 45px;
+
+
 }
 
 .navbar input:focus {
@@ -188,6 +196,10 @@ button {
 
 .navbar button:hover {
   background: black;
+}
+
+.display-none {
+  display: none;
 }
 
 /* section01 大封面 ------------------------------------------------------------------------- */
@@ -256,6 +268,8 @@ button {
 }
 
 .right {
+  width: 530px;
+  /* background-color: red; */
   flex-grow: 0;
   display: flex;
   flex-direction: row;
@@ -547,13 +561,13 @@ button {
 }
 
 
-#stay-in-the-know{
+#stay-in-the-know {
   font-size: 15px;
   color: #424242;
   width: 318px;
-  margin: 19.86px 50px ;
+  margin: 19.86px 50px;
   line-height: 1.75rem;
-  
+
 }
 
 
@@ -562,20 +576,60 @@ button {
 footer {
   padding: 120px 95px;
   background: var(--font-black);
+  color: var(--font-lightgrey);
 }
 
 #logo-footer {
   width: 200px;
 }
 
+.footer-enter-and-subscribe {
+  width: 430px;
+  height: 50px;
+  display: flex;
+  margin-bottom: 20px;
+}
 
+
+/* footer的imput 輸入欄位 */
+footer input {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 4%;
+  flex-grow: 1;
+}
+
+
+
+footer button {
+  font-weight: 700;
+  font-size: 12px;
+  width: 125px;
+  height: 50px;
+}
+
+
+#copyright {
+  color: var(--font-gray);
+}
+
+
+#copyright a {
+  color: var(--font-gray);
+  transition: color 0.2s linear 0s;
+
+}
+
+#copyright a:hover {
+  color: var(--font-white);
+}
 
 
 /* ☆媒☆體☆查☆詢-------------- */
 
 
 /* 原網頁navbar 到 1200px後會切換狀態 */
-@media (max-width:1200px) {
+@media (max-width:1199.98px) {
 
   h2 {
     font-size: 38px;
@@ -677,7 +731,7 @@ footer {
   }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.98px) {
 
   h2 {
     font-size: 38px;
@@ -732,6 +786,16 @@ footer {
     background: none;
     padding: 0;
   }
+
+  .right {
+    width: 480px;
+    transform: translate(15px);
+  }
+
+  .menber-img::before {
+    width: 10px;
+  }
+
 
 
   #section02 {
@@ -791,7 +855,7 @@ footer {
 }
 
 /* 768px ------------ */
-@media (max-width:768px) {
+@media (max-width:767.98px) {
   .card {
     width: 260px;
     flex-shrink: 0;
@@ -820,7 +884,7 @@ footer {
 }
 
 /* 576px --------------------------------------------- */
-@media (max-width:576px) {
+@media (max-width:575.98px) {
 
   h2 {
     font-size: 28px;
@@ -834,7 +898,7 @@ footer {
 
   /* right */
 
-  .right {}
+  /* .right {} */
 
   .menber-img {
     display: inline-flex;
@@ -939,4 +1003,7 @@ footer {
 
 }
 
-@media (max-width:480px) {}
+@media (max-width:479.98px) {}
+
+
+@media (max-width:359.98px) {}

@@ -34,7 +34,7 @@
 <body>
 
 
-  <!-- navbar 最上 -->
+  <!-- navbar 最上 --------------------------------------------------------------------------->
   <nav class="navbar">
     <div class="nav-left">
       <a href="#"><img src="./img/logo-default-400x95.png" alt="logo"></a>
@@ -48,14 +48,13 @@
 
     <div class="nav-right">
       <input type="search" id="top-search" placeholder="Search...">
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      <!-- <input class="display-none" type="search" id="top-search" placeholder="Search..."> -->
+      <button id="topSearchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
   </nav>
 
-  <!-- section01 大封面 -->
+  <!-- section01 大封面 --------------------------------------------------------------------------->
   <div id="section01">
-
-
 
     <div class="left">
       <div class="title">
@@ -87,7 +86,7 @@
   </div>
 
 
-  <!-- section02 最近的新聞(輪播) -->
+  <!-- section02 最近的新聞(輪播) --------------------------------------------------------------------------->
   <div id="section02">
     <h2>Recent News</h2>
     <!-- <hr> -->
@@ -214,20 +213,58 @@
       <h2>Get Moli mobile app</h2>
       <button>DOWNLOAD</button>
     </div>
-<div id="stay-in-the-know">
-  <p>Stay in the know of my latest articles and publications with the Moli mobile app that is available worldwide on iOS and Android.</p>
-</div>
-  </div> 
+    <div id="stay-in-the-know">
+      <div>“</div>
+      <p>Stay in the know of my latest articles and publications with the Moli mobile app that is available worldwide on
+        iOS and Android.</p>
+    </div>
+  </div>
 
   <!-- section04 拿摸里手機app --------------------------------------------------------------------------->
   <div id="section05">
     <!-- <h3>Read Me on:</h3> -->
-  </div> 
+  </div>
 
   <!-- footer --------------------------------------------------------------------------->
   <footer>
     <img src="./img/logo-inverse-400x95.png" alt="logo-dark" id="logo-footer">
+
+
+
+    <ul>
+      <li>About</li>
+      <li>Trending News</li>
+      <li>Popular News</li>
+      <li>Recently Published</li>
+    </ul>
+
+    <ul>
+      <li>Send Your Article</li>
+      <li>Contacts</li>
+      <li>Privacy Policy</li>
+      <li></li>
+    </ul>
+
+    <div class="footer-enter-and-subscribe">
+      <input type="text" placeholder="E-mail">
+      <button>SUBSCRIBE</button>
+    </div>
+
+    800.567.1234
+    info@demolink.org
+
+    181 Silver Spear Ave. Brooklyn,
+    NY 11223
+
+    <div id="copyright">© 2020 Patron. All rights reserved.<a href=""> Privacy Policy </a></div>
+
   </footer>
+
+
+
+
+  <script src="./js/CSS_Template RWD website.JS"></script>
+
 
   <!-- 
   <script>
@@ -257,7 +294,7 @@
     let observer = new IntersectionObserver(changeColor, options);
     //觀察對象section1
     observer.observe(section1);
-  </script> -->
+  </ㄡscript> -->
 </body>
 
 </html>
