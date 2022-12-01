@@ -1,7 +1,5 @@
 const topSearchIcon = document.getElementById('topSearchIcon') // 搜尋btn
 const topSearchInput = document.getElementById('top-search') // 搜尋input
-// topSearchInput.style.display="none";
-// let sayHO = topSearchIcon.onclick
 
 // topSearchIcon.onclick = function (){
 // // topSearchInput.style.display="none";
