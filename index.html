@@ -33,233 +33,236 @@
 
 <body>
 
+  <div class="container">
 
-  <!-- navbar 最上 --------------------------------------------------------------------------->
-  <nav class="navbar">
-    <div class="nav-left">
-      <a href="#"><img src="./img/logo-default-400x95.png" alt="logo"></a>
+    <!-- navbar 最上 --------------------------------------------------------------------------->
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#"><img src="./img/logo-default-400x95.png" alt="logo"></a>
+        <ul>
+          <li><a href="#">POPULAR NEWS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a href="#">CONTACTS</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <!-- <input type="search" id="top-search" placeholder="Search..."> -->
+        <input class="display-none" type="search" id="top-search" placeholder="Search...">
+        <button id="topSearchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </nav>
+
+    <!-- section01 大封面 --------------------------------------------------------------------------->
+    <div id="section01">
+
+      <div class="left">
+        <div class="title">
+          <h1>Essential Tips for <br>Happiness and <br>Productivity</h1>
+          <div class="enter-and-subscribe">
+            <input type="text" placeholder="Enter Your E-mail">
+            <button>SUBSCRIBE</button>
+          </div>
+          <p>Subscribe to my newsletter to get fresh articles.</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="menber-content">
+          <div class="box-checkout">
+            <a href="#" class="hover-black">Check out</a>
+            <p>my latest articles.</p>
+          </div>
+          <div class="box-name">
+            <a href="#" class="hover-coffee">Moli Carter</a>
+            <p>Creative blogger <br>
+              from the USA</p>
+          </div>
+        </div>
+        <div class="menber-img">
+          <!-- <img src="./img/home-01-324x426.jpg" alt=""> -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- section02 最近的新聞(輪播) --------------------------------------------------------------------------->
+    <div id="section02">
+      <h2>Recent News</h2>
+      <!-- <hr> -->
+      <div class="carousel">
+        <div class="card">
+          <h2>April 27</h2>
+          <img src="./img/recent-news-01-423x324.jpg" alt="">
+          <div class="card-body">
+            <a href="#" class="hover-coffee">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+            <a href="#" id="explore" class="hover-black">EXPLORE</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>April 27</h2>
+          <img src="./img/recent-news-01-423x324.jpg" alt="">
+          <div class="card-body">
+            <a href="#" class="hover-coffee">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+            <a href="#" id="explore" class="hover-black">EXPLORE</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>April 27</h2>
+          <img src="./img/recent-news-01-423x324.jpg" alt="">
+          <div class="card-body">
+            <a href="#" class="hover-coffee">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+            <a href="#" id="explore" class="hover-black">EXPLORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section03 受歡迎ㄉ新聞 --------------------------------------------------------------------------->
+    <div id="section03">
+      <div class="top">
+        <h2>Popular News</h2>
+        <p>From lifestyle tips to useful and simple recipes, my blog encompasses a wide variety of topics and
+          publications.
+          Here are the most popular ones.</p>
+      </div>
+      <div class="card2-grope">
+        <div class="card2">
+          <img src="./img/popular-news-01-370x257.jpg" alt="">
+          <div class="card2-body">
+            <div class="tag">INTERIOR</div>
+            <div class="card2-title">
+              <a href="#" class="hover-coffee">Decorating a Modern Bedroom on a Budget</a>
+            </div>
+            <div class="hr"></div>
+            <div class="card2-date">NOVEMBER 12, 2020</div>
+          </div>
+        </div>
+
+        <div class="card2">
+          <img src="./img/popular-news-02-370x257.jpg" alt="">
+          <div class="card2-body">
+            <div class="tag">RELATIONSHIPS</div>
+            <div class="card2-title">
+              <a href="#" class="hover-coffee">Top 10 Tips For Building Loving Relationships</a>
+            </div>
+            <div class="hr"></div>
+            <div class="card2-date">NOVEMBER 12, 2020</div>
+          </div>
+        </div>
+
+        <div class="card2">
+          <img src="./img/popular-news-03-370x257.jpg" alt="">
+          <div class="card2-body">
+            <div class="tag">LIFESTYLE</div>
+            <div class="card2-title">
+              <a href="#" class="hover-coffee">10 Useful Morning Habits to Start the Day Off Right</a>
+            </div>
+            <div class="hr"></div>
+            <div class="card2-date">NOVEMBER 12, 2020</div>
+          </div>
+        </div>
+
+        <div class="card2">
+          <img src="./img/popular-news-04-370x257.jpg" alt="">
+          <div class="card2-body">
+            <div class="tag">PURPOSE</div>
+            <div class="card2-title">
+              <a href="#" class="hover-coffee">Why You Should Plan Your Life on a Decade Level</a>
+            </div>
+            <div class="hr"></div>
+            <div class="card2-date">NOVEMBER 12, 2020</div>
+          </div>
+        </div>
+
+        <div class="card2">
+          <img src="./img/popular-news-05-370x257.jpg" alt="">
+          <div class="card2-body">
+            <div class="tag">FOOD</div>
+            <div class="card2-title">
+              <a href="#" class="hover-coffee">Summer Menus and Mood Setters for Hosting at Home</a>
+            </div>
+            <div class="hr"></div>
+            <div class="card2-date">NOVEMBER 12, 2020</div>
+          </div>
+        </div>
+
+        <div class="card2">
+          <img src="./img/popular-news-06-370x257.jpg" alt="">
+          <div class="card2-body">
+            <div class="tag">SPORTS</div>
+            <div class="card2-title">
+              <a href="#" class="hover-coffee">35 Home Workout Tips to Maximize Results</a>
+            </div>
+            <div class="hr"></div>
+            <div class="card2-date">NOVEMBER 12, 2020</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- section04 拿摸里手機app --------------------------------------------------------------------------->
+    <div id="section04">
+      <div>
+        <h2>Get Moli mobile app</h2>
+        <button>DOWNLOAD</button>
+      </div>
+      <div id="stay-in-the-know">
+        <div>“</div>
+        <p>Stay in the know of my latest articles and publications with the Moli mobile app that is available worldwide
+          on
+          iOS and Android.</p>
+      </div>
+    </div>
+
+    <!-- section04 拿摸里手機app --------------------------------------------------------------------------->
+    <div id="section05">
+      <!-- <h3>Read Me on:</h3> -->
+    </div>
+
+    <!-- footer --------------------------------------------------------------------------->
+    <footer>
+      <img src="./img/logo-inverse-400x95.png" alt="logo-dark" id="logo-footer">
+
+
+
       <ul>
-        <li><a href="#">POPULAR NEWS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">PAGES</a></li>
-        <li><a href="#">CONTACTS</a></li>
+        <li>About</li>
+        <li>Trending News</li>
+        <li>Popular News</li>
+        <li>Recently Published</li>
       </ul>
-    </div>
 
-    <div class="nav-right">
-      <input type="search" id="top-search" placeholder="Search...">
-      <!-- <input class="display-none" type="search" id="top-search" placeholder="Search..."> -->
-      <button id="topSearchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-  </nav>
+      <ul>
+        <li>Send Your Article</li>
+        <li>Contacts</li>
+        <li>Privacy Policy</li>
+        <li></li>
+      </ul>
 
-  <!-- section01 大封面 --------------------------------------------------------------------------->
-  <div id="section01">
-
-    <div class="left">
-      <div class="title">
-        <h1>Essential Tips for <br>Happiness and <br>Productivity</h1>
-        <div class="enter-and-subscribe">
-          <input type="text" placeholder="Enter Your E-mail">
-          <button>SUBSCRIBE</button>
-        </div>
-        <p>Subscribe to my newsletter to get fresh articles.</p>
-      </div>
-    </div>
-
-    <div class="right">
-      <div class="menber-content">
-        <div class="box-checkout">
-          <a href="#" class="hover-black">Check out</a>
-          <p>my latest articles.</p>
-        </div>
-        <div class="box-name">
-          <a href="#" class="hover-coffee">Moli Carter</a>
-          <p>Creative blogger <br>
-            from the USA</p>
-        </div>
-      </div>
-      <div class="menber-img">
-        <!-- <img src="./img/home-01-324x426.jpg" alt=""> -->
-      </div>
-    </div>
-  </div>
-
-
-  <!-- section02 最近的新聞(輪播) --------------------------------------------------------------------------->
-  <div id="section02">
-    <h2>Recent News</h2>
-    <!-- <hr> -->
-    <div class="carousel">
-      <div class="card">
-        <h2>April 27</h2>
-        <img src="./img/recent-news-01-423x324.jpg" alt="">
-        <div class="card-body">
-          <a href="#" class="hover-coffee">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-          <a href="#" id="explore" class="hover-black">EXPLORE</a>
-        </div>
+      <div class="footer-enter-and-subscribe">
+        <input type="text" placeholder="E-mail">
+        <button>SUBSCRIBE</button>
       </div>
 
-      <div class="card">
-        <h2>April 27</h2>
-        <img src="./img/recent-news-01-423x324.jpg" alt="">
-        <div class="card-body">
-          <a href="#" class="hover-coffee">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-          <a href="#" id="explore" class="hover-black">EXPLORE</a>
-        </div>
-      </div>
+      800.567.1234
+      info@demolink.org
 
-      <div class="card">
-        <h2>April 27</h2>
-        <img src="./img/recent-news-01-423x324.jpg" alt="">
-        <div class="card-body">
-          <a href="#" class="hover-coffee">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-          <a href="#" id="explore" class="hover-black">EXPLORE</a>
-        </div>
-      </div>
-    </div>
-  </div>
+      181 Silver Spear Ave. Brooklyn,
+      NY 11223
 
-  <!-- section03 受歡迎ㄉ新聞 --------------------------------------------------------------------------->
-  <div id="section03">
-    <div class="top">
-      <h2>Popular News</h2>
-      <p>From lifestyle tips to useful and simple recipes, my blog encompasses a wide variety of topics and
-        publications.
-        Here are the most popular ones.</p>
-    </div>
-    <div class="card2-grope">
-      <div class="card2">
-        <img src="./img/popular-news-01-370x257.jpg" alt="">
-        <div class="card2-body">
-          <div class="tag">INTERIOR</div>
-          <div class="card2-title">
-            <a href="#" class="hover-coffee">Decorating a Modern Bedroom on a Budget</a>
-          </div>
-          <div class="hr"></div>
-          <div class="card2-date">NOVEMBER 12, 2020</div>
-        </div>
-      </div>
+      <div id="copyright">© 2020 Patron. All rights reserved.<a href=""> Privacy Policy </a></div>
 
-      <div class="card2">
-        <img src="./img/popular-news-02-370x257.jpg" alt="">
-        <div class="card2-body">
-          <div class="tag">RELATIONSHIPS</div>
-          <div class="card2-title">
-            <a href="#" class="hover-coffee">Top 10 Tips For Building Loving Relationships</a>
-          </div>
-          <div class="hr"></div>
-          <div class="card2-date">NOVEMBER 12, 2020</div>
-        </div>
-      </div>
-
-      <div class="card2">
-        <img src="./img/popular-news-03-370x257.jpg" alt="">
-        <div class="card2-body">
-          <div class="tag">LIFESTYLE</div>
-          <div class="card2-title">
-            <a href="#" class="hover-coffee">10 Useful Morning Habits to Start the Day Off Right</a>
-          </div>
-          <div class="hr"></div>
-          <div class="card2-date">NOVEMBER 12, 2020</div>
-        </div>
-      </div>
-
-      <div class="card2">
-        <img src="./img/popular-news-04-370x257.jpg" alt="">
-        <div class="card2-body">
-          <div class="tag">PURPOSE</div>
-          <div class="card2-title">
-            <a href="#" class="hover-coffee">Why You Should Plan Your Life on a Decade Level</a>
-          </div>
-          <div class="hr"></div>
-          <div class="card2-date">NOVEMBER 12, 2020</div>
-        </div>
-      </div>
-
-      <div class="card2">
-        <img src="./img/popular-news-05-370x257.jpg" alt="">
-        <div class="card2-body">
-          <div class="tag">FOOD</div>
-          <div class="card2-title">
-            <a href="#" class="hover-coffee">Summer Menus and Mood Setters for Hosting at Home</a>
-          </div>
-          <div class="hr"></div>
-          <div class="card2-date">NOVEMBER 12, 2020</div>
-        </div>
-      </div>
-
-      <div class="card2">
-        <img src="./img/popular-news-06-370x257.jpg" alt="">
-        <div class="card2-body">
-          <div class="tag">SPORTS</div>
-          <div class="card2-title">
-            <a href="#" class="hover-coffee">35 Home Workout Tips to Maximize Results</a>
-          </div>
-          <div class="hr"></div>
-          <div class="card2-date">NOVEMBER 12, 2020</div>
-        </div>
-      </div>
-    </div>
+    </footer>
 
   </div>
-
-
-
-
-  <!-- section04 拿摸里手機app --------------------------------------------------------------------------->
-  <div id="section04">
-    <div>
-      <h2>Get Moli mobile app</h2>
-      <button>DOWNLOAD</button>
-    </div>
-    <div id="stay-in-the-know">
-      <div>“</div>
-      <p>Stay in the know of my latest articles and publications with the Moli mobile app that is available worldwide on
-        iOS and Android.</p>
-    </div>
-  </div>
-
-  <!-- section04 拿摸里手機app --------------------------------------------------------------------------->
-  <div id="section05">
-    <!-- <h3>Read Me on:</h3> -->
-  </div>
-
-  <!-- footer --------------------------------------------------------------------------->
-  <footer>
-    <img src="./img/logo-inverse-400x95.png" alt="logo-dark" id="logo-footer">
-
-
-
-    <ul>
-      <li>About</li>
-      <li>Trending News</li>
-      <li>Popular News</li>
-      <li>Recently Published</li>
-    </ul>
-
-    <ul>
-      <li>Send Your Article</li>
-      <li>Contacts</li>
-      <li>Privacy Policy</li>
-      <li></li>
-    </ul>
-
-    <div class="footer-enter-and-subscribe">
-      <input type="text" placeholder="E-mail">
-      <button>SUBSCRIBE</button>
-    </div>
-
-    800.567.1234
-    info@demolink.org
-
-    181 Silver Spear Ave. Brooklyn,
-    NY 11223
-
-    <div id="copyright">© 2020 Patron. All rights reserved.<a href=""> Privacy Policy </a></div>
-
-  </footer>
-
 
 
 

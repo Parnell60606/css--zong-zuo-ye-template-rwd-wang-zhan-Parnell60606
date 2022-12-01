@@ -80,6 +80,13 @@ button {
   background-color: var(--bg-lightbrown);
 }
 
+/* 最外的container ------------------------------------------------------------------------- */
+
+.container {
+  overflow-x: auto;
+}
+
+
 /* navbar ------------------------------------------------------------------------- */
 .navbar {
   position: fixed;
@@ -168,10 +175,11 @@ button {
 .navbar input {
   flex-grow: 1;
   height: 100%;
+  width: 419px;
   box-sizing: border-box;
   outline: none;
   background: transparent;
-
+  background-color: rebeccapurple;
 
   color: var(--font-gray);
   /* top: 0; */
