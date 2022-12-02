@@ -6,3 +6,21 @@
 
 <a href="https://www.letswrite.tw/intersection-oserver-basic/">IntersectionObserver：上篇 – 基本介紹及使用</a>
 
+
+## li boder重複
+
+```css
+li {
+    /* 減少重複邊框 */
+    margin: 0px -1px -1px 0px;
+    border:1px solid red;
+    z-index:1;
+}
+
+li:hover{
+    border:1px solid black;
+    z-index:100;
+}
+```
+
+就不會有上下邊框重疊 (2px)， 調整margin之後線條被擋的問題了。
